@@ -7,17 +7,19 @@ Simple blog app with Django Rest Framework. Check out the project's [documentati
 
 # Prerequisites
 
-- [Docker](https://docs.docker.com/docker-for-mac/install/)  
+- [Docker](https://docs.docker.com/docker-for-mac/install/)
 
 # Local Development
 
 Start the dev server for local development:
+
 ```bash
 docker-compose up
 ```
 
 Run a command inside the docker container:
 
-```bash
-docker-compose run --rm web [command]
-```
+````bash
+docker-compose run --rm app [command]
+```docker
+````
