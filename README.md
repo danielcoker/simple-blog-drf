@@ -21,5 +21,4 @@ Run a command inside the docker container:
 
 ````bash
 docker-compose run --rm app [command]
-```docker
 ````
