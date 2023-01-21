@@ -12,4 +12,4 @@ WORKDIR /code
 EXPOSE 8000
 
 # Run the production server
-CMD gunicorn --env DJANGO_CONFIGURATION=Production --bind 0.0.0.0:$PORT --access-logfile - simple-blog.wsgi:application
+CMD python ./manage.py migrate && gunicorn --env DJANGO_CONFIGURATION=Production --bind 0.0.0.0:$PORT --access-logfile - simple-blog.wsgi:application
